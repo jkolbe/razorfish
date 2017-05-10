@@ -1,0 +1,51 @@
+@import "mixins";
+@import "userCard";
+@import "navigation";
+@import "badge";
+
+html, body, figure, p, ul, li {
+  padding: 0;
+  margin: 0;
+}
+a {
+  &:link, &:visited, &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+}
+
+.container {
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {width: 750px;}
+  @media (min-width: 992px) {width: 970px;}
+  @media (min-width: 1200px) {width: 1170px;}
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  &:after {
+    clear: both;
+  }
+}
+
+.column {
+  padding-right: 15px;
+  padding-left: 15px;
+  float: left;
+  width: 33.33333333%;
+  @media (max-width: 767px) {width: 100%;}
+}

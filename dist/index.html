@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Front end assessment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="/assets/css/main.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+  <header class="container">
+    <nav class="navigation" role="navigation" aria-label="main navigation">
+      <ul role="menubar">
+        <li role="presentation">
+          <a href="javascript:;" role="menuitem" aria-selected="false">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>Check in</span>
+            <span class="badge">3</span>
+          </a>
+        </li><li role="presentation">
+          <a href="javascript:;" role="menuitem" aria-selected="false">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <span>Events</span>
+          </a>
+        </li><li class="active" role="presentation">
+          <a href="javascript:;" role="menuitem" aria-selected="false">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <span>Account</span>
+          </a>
+        </li><li role="presentation">
+          <a href="javascript:;" role="menuitem" aria-selected="false">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <div class="column">
+        <!-- User Card [start] -->
+        <article class="user-card">
+          <div class="user-card-header">
+            <figure class="user-card-avatar">
+              <img src="/assets/images/avatar.png" alt="user avatar" width="70" height="70" >
+            </figure>
+            <div class="user-card-user">
+              <p class="user-card-name"><strong>Courtney<br/>Timmons</strong></p>
+              <p class="user-card-followers">15,323 followers</p>
+            </div>
+          </div>
+          <div class="user-card-body">
+            <ul>
+              <li>
+                <a href="javascript:;" class="user-action"><span>Edit user</span><i class="fa fa-user" aria-hidden="true"></i></a>
+              </li>
+              <li class="active"> 
+                <a href="javascript:;" class="user-action"><span>Web statistics</span><i class="fa fa-bar-chart" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="javascript:;" class="user-action"><span>Upload settings</span><i class="fa fa-wrench" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="javascript:;" class="user-action"><span>Events</span><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- User Card [end] -->
+      </div>
+
+    </div>
+    
+  </main>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  
+  <script src="https://use.fontawesome.com/2dce1c409a.js"></script>
+  <script src="/assets/js/nav.js"></script>
+  <script src="/assets/js/userCard.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+$background: #e55e3a;
+$text: #ffffff;
+$font: 9px;
+
+.badge {
+  background-color: $background;
+  color: $text;
+  font-size: $font;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+}

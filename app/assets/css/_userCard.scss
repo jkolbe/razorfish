@@ -1,0 +1,94 @@
+/* User Card */
+
+$userCardRadius: 7px;
+$userCardHeader: #b1a599;
+$userCardBody: #ffffff;
+$userCardAvatar: #a59789;
+$userCardIcon: #c6bfb8;
+$userCardActive: #f8f3f0;
+$userCardActiveBefore: #4daf7b;
+$userCardActiveIcon: #e55f3b;
+$userCardFont: #8e8071;
+$userCardCopy1: 1.7rem;
+$userCardCopy2: 1.5rem;
+$userCardCopy3: 1.3rem;
+
+
+.user-card {
+  .user-card-header {
+    border-radius: $userCardRadius $userCardRadius 0 0;
+    background-color: $userCardHeader;
+    border-bottom: 2px solid $userCardAvatar;
+    padding: 20px;
+    .user-card-avatar, .user-card-user {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .user-card-avatar {
+      max-width: 70px;
+      max-height: 70px;
+      border-radius: 50%;
+      padding: 8px;
+      margin-right: 10px;
+      border: 2px solid $userCardAvatar;
+      img {width: 100%;}
+    }
+    .user-card-user {
+      .user-card-name {
+        color: $userCardBody;
+        text-transform: uppercase;
+        font-size: $userCardCopy1;
+        margin-bottom: 10px;
+        line-height: 1;
+      }
+      .user-card-followers {
+        color: $userCardFont;
+        font-size: $userCardCopy3;
+      }
+    }
+  }
+  .user-card-body {
+    background-color: $userCardBody;
+    border-radius: 0 0 $userCardRadius $userCardRadius;
+    color: $userCardFont;
+    font-size: $userCardCopy2;
+    a {color: $userCardFont;}
+    ul {
+      list-style: none;
+      li {
+        padding: 5px 0;
+        a {
+          display: block;
+          padding: 15px 20px;
+          span, i {
+            display: inline-block;
+          }
+          span {
+            width: calc(100% - 21px);
+          }
+          i {
+            width: 17px;
+            font-size: $userCardCopy1;
+            text-align: right;
+            color: $userCardIcon;
+          }
+        }
+        &.active {
+          a {
+            position: relative;
+            background-color: $userCardActive;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0; top:0;
+              width: 4px; height: 100%;
+              background-color: $userCardActiveBefore;
+            }
+            i {color: $userCardActiveIcon;}
+          }
+        }
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "razorfish",
+  "version": "1.0.0",
+  "description": "front-end test",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "pump": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^2.0.4",
+    "gulp-util": "^3.0.8",
+    "jshint": "^2.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkolbe/razorfish.git"
+  },
+  "author": "Joanna Kolbe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkolbe/razorfish/issues"
+  },
+  "homepage": "https://github.com/jkolbe/razorfish#readme"
+}
